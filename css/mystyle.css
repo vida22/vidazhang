@@ -11,21 +11,26 @@ a, li {
 
 body{
     background-color: #252525;
+    -webkit-font-smoothing:
+	antialiased;
+	text-rendering:
+	optimizeLegibility;
 }
 
-#main{
+#works{
     background-color: #ffffff;
 }
 
 
 #side-bar {
+    top: 0;
     padding-left: 4.5%;
     padding-right: 4.5%;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #FCFCFC;
     box-shadow: 1px 1px 1px 1px #f6f6f6;
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -43,13 +48,27 @@ body{
 /*Media Queries*/
 
 @media (min-width: 992px) {
-    #main {
-        left: 40%;
+    #works {
+        left: 30%;
+        position: relative;
+        display: block;
+        top: 0;
+        width: 70%;
     }
     
-    .fixed {
-    position: fixed;
-    height: 100%;
+    
+    #side-bar {
+        position: fixed;
+        height: 100%;
+        width: 30%;
+        display: inline-block;
+        
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
     }
 }
 
@@ -57,7 +76,11 @@ body{
 
 /*Nav Menu*/
 nav{
-    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5%;
+    z-index: 2;
+    background-color: #ffffff;
 }
 nav ul {
     text-align: right;
