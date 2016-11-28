@@ -15,28 +15,21 @@ body{
 
 #main{
     background-color: #ffffff;
-/*    width: 70%;*/
-/*    display: block;*/
-    height: 100%;
-/*    left: 30%;*/
-    position: relative;
-    
 }
 
+
 #side-bar {
-/*    width: 30%;*/
-    min-height: 100%;
     padding-left: 4.5%;
     padding-right: 4.5%;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #FCFCFC;
-/*  border-right: 1px solid #E1E1E1;*/
-    position: fixed;
-/*    display: inline-block;*/
     box-shadow: 1px 1px 1px 1px #f6f6f6;
     z-index: 2;
 }
+
+
+/*Spaces*/
 
 #bottom-space {
     padding-bottom: 100px;
@@ -44,6 +37,20 @@ body{
 
 .space15px {
     padding-bottom: 15px;
+}
+
+
+/*Media Queries*/
+
+@media (min-width: 992px) {
+    #main {
+        left: 40%;
+    }
+    
+    .fixed {
+    position: fixed;
+    height: 100%;
+    }
 }
 
 
