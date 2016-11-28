@@ -1,0 +1,173 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+a, li {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/*DIVs*/
+
+body{
+    background-color: #252525;
+}
+
+main{
+    background-color: #ffffff;
+/*    width: 70%;*/
+    display: block;
+    height: 100%;
+/*    left: 30%;*/
+    position: relative;
+    
+}
+
+#side-bar {
+/*    width: 30%;*/
+    height: 100%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FCFCFC;
+/*  border-right: 1px solid #E1E1E1;*/
+    position: fixed;
+/*    display: inline-block;*/
+    box-shadow: 1px 1px 1px 1px #f6f6f6;
+    z-index: 2;
+}
+
+#bottom-space {
+    padding-bottom: 100px;
+}
+
+.space15px {
+    padding-bottom: 15px;
+}
+
+
+
+/*Nav Menu*/
+nav{
+    margin: 20px;
+}
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    float: right;
+}
+
+.menu {
+    font-size: 14px;
+    font-weight: 300;
+    color: #959595;
+    margin: 20px;
+    letter-spacing: .7px;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #252525;
+}
+
+
+/*Projects*/
+
+.project {
+    padding: 22px 66px 42px 66px;   
+}
+
+hr {
+    border-top:1px dashed #DADADA;
+    height: 0;
+    margin-bottom: 80px;
+}
+
+
+
+/*Footer*/
+
+footer{
+    font-size: 12px;
+    font-weight: 300;
+    color: #959595;
+    letter-spacing: 0.41px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 22px;
+}
+
+/*Typography*/
+
+h1{
+    font-size: 25px;
+    color: #252525;
+    font-weight: 500;
+    letter-spacing: .7px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 575px;
+    z-index: 2;
+}
+
+h2{
+    font-size: 15px;
+    font-weight: 500; 
+    text-transform: uppercase;
+    color: #252525;
+    letter-spacing: 1.3px;
+    z-index: 2;
+    margin-top: 20px;
+
+}
+
+p{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #484848;
+    letter-spacing: .75px;
+    margin: 15px 0px 15px 0px;
+    width: 525px;
+    z-index: 2;
+}
+
+
+h4 {
+    /*project keywords*/
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #959595;
+    letter-spacing: 0.7px;
+    margin: 30px 0px 30px 0px;
+    z-index: 2;
+}
+
+
+.details {
+    /*pink links*/
+    font-size: 14px;
+    font-weight: 400;
+    color: #E3518A;
+    text-transform: uppercase;
+    margin: 25px 0px 25px 0px;
+    letter-spacing: .62px;
+    z-index: 2;
+}
+
+.details:hover {
+    border-bottom: 2px #E3518A solid;
+    text-decoration: none;
+    color: #E7216F;
+    padding-bottom: 1px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
