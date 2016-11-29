@@ -24,14 +24,16 @@ body{
 
 #side-bar {
     top: 0;
-    padding-left: 4.5%;
-    padding-right: 4.5%;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #FCFCFC;
-    box-shadow: 1px 1px 1px 1px #f6f6f6;
+    background: #F8F8F8;
+    -moz-box-shadow: 1px 1px 1px 1px #f6f6f6;
+    -webkit-box-shadow:1px 1px 1px 1px #f6f6f6;
     z-index: 5;
 }
+
 
 
 /*Spaces*/
@@ -50,6 +52,12 @@ body{
 
 /*Layout for desktop*/
 @media (min-width: 1024px) {
+    #profile {
+        top: 20%;
+        display: block;
+        position: fixed;
+    }
+    
     #side-bar {
         position: fixed;
         height: 100%;
@@ -69,14 +77,26 @@ body{
         width: 100%;
         top: 0;
     }
+    
+    #profile p {
+        margin-top: 20px;
+        width: 40%;
+    }
 }
 
 /*Layout for tablet or small desktop*/
-@media @media (min-width: 480px) and (max-width:1024px) {
+@media (min-width: 480px) and (max-width:1024px) {
+    #profile {
+        display: block;
+        position: relative;
+        padding-left: 16px;
+    }
+    
     #side-bar {
         position: relative;
         width: 100%;
         display: inline-block;
+        height: 100%;
     }
     
     #works {
@@ -90,20 +110,190 @@ body{
         width: 100%;
         top: 0;
     }   
+    
+    #profile p {
+        margin-top: 20px;
+        max-width: 60%;
+        
+    }
 }
 
 
-/*Layout for mobile*/
-@media @media (max-width: 480px) {
+/*Typography and Layout for non-mobile*/
+
+@media (min-width:480px) {
     
-    h1 {
-        font-size: 20px;
-        letter-spacing: .7px;
+    .menu {
+    font-size: 14px;
+    font-weight: 300;
+    color: #959595;
+    margin: 20px;
+    letter-spacing: .7px;
+    }   
+    
+    .project {
+    padding: 22px 66px 42px 66px;   
     }
     
+    footer{
+    padding-left: 66px;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    }
+    
+    hr {
+    margin-bottom: 80px;
+    }
+    
+    h1{
+    font-size: 25px;
+    letter-spacing: .7px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    max-width: 75%;
+    }
+
+    h2{
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    margin-top: 20px;
+
+    }
+
+    p{
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: .75px;
+    }
+
+    #works p {
+    margin: 15px 0px 15px 0px;
+    }
+    
+
+    h4 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+    margin: 30px 0px 30px 0px;
+    }
+
+
+    .details {
+    /*pink links*/
+    font-size: 14px;
+    margin: 25px 0px 25px 0px;
+    letter-spacing: .62px;
+    }
+    
+    /*images in non-mobile*/
+    .logo {
+    width: 22px;
+    height: 23px;
+    }   
+
+    .social {
+    width: 30px;
+    height: 30px;
+    }
+    
+    #social ul {
+    /*social icons in non-mobile*/
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 0;
+    }
 }
 
 
+/*Layout and typography for mobile*/
+@media (max-width: 480px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }  
+    
+    .menu {
+    font-size: 12px;
+    font-weight: 300;
+    color: #959595;
+    margin: 10px;
+    letter-spacing: .7px;
+    }   
+    
+    .project {
+    padding: 20px 8% 20px 8%;   
+    }
+    
+    footer {
+    padding-left: 8%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    }
+    
+    hr {
+    margin-bottom: 60px;
+    }
+    
+    h1{
+    font-size: 20px;
+    letter-spacing: .7px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    }
+
+    h2{
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    margin-top: 20px;
+    }
+
+    p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .75px;
+    margin: 15px 0px 15px 0px;
+    }
+
+
+    h4 {
+    /*project tags*/
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    margin: 30px 0px 30px 0px;
+    max-width: 80%;
+    }
+
+
+    .details {
+    /*pink links*/
+    font-size: 12px;
+    margin: 25px 0px 25px 0px;
+    letter-spacing: .62px;
+    }
+    
+    /*images in mobile*/
+    .logo {
+    width: 15px;
+    height: 16px;
+    }   
+
+    .social {
+    width: 20px;
+    height: 20px;
+    }
+    
+    #social ul {
+    /*social icons in mobile*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+}
 
 
 
@@ -123,13 +313,6 @@ nav ul li {
     float: right;
 }
 
-.menu {
-    font-size: 14px;
-    font-weight: 300;
-    color: #959595;
-    margin: 20px;
-    letter-spacing: .7px;
-}
 
 nav ul li a:hover{
     text-decoration: none;
@@ -137,18 +320,11 @@ nav ul li a:hover{
 }
 
 
-/*Projects*/
-
-.project {
-    padding: 22px 66px 42px 66px;   
-}
-
 
 /*Divider Lines*/
 hr {
     border-top:1px dashed #DADADA;
     height: 0;
-    margin-bottom: 80px;
 }
 
 
@@ -160,67 +336,48 @@ footer{
     font-weight: 300;
     color: #959595;
     letter-spacing: 0.41px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 22px;
+    position: relative;
 }
 
-/*Typography*/
+/*Typography for All Screensizes*/
 
 h1{
-    font-size: 25px;
     color: #252525;
     font-weight: 500;
-    letter-spacing: .7px;
-    margin-top: 30px;
-    margin-bottom: 35px;
-    max-width: 75%;
     z-index: 2;
 }
 
 h2{
-    font-size: 15px;
     font-weight: 500; 
     text-transform: uppercase;
     color: #252525;
-    letter-spacing: 1.3px;
     z-index: 2;
-    margin-top: 20px;
+}
 
+#profile h2 {
+    margin-top: 80px;
 }
 
 p{
-    font-size: 17px;
-    line-height: 24px;
     font-weight: 300;
     color: #484848;
-    letter-spacing: .75px;
-    margin: 15px 0px 15px 0px;
-    max-width: 70%;
     z-index: 2;
 }
 
 
 h4 {
     /*project keywords*/
-    font-size: 12px;
-    line-height: 18px;
     font-weight: 400;
     color: #959595;
-    letter-spacing: 0.7px;
-    margin: 30px 0px 30px 0px;
     z-index: 2;
 }
 
 
 .details {
     /*pink links*/
-    font-size: 14px;
     font-weight: 400;
     color: #E3518A;
     text-transform: uppercase;
-    margin: 25px 0px 25px 0px;
-    letter-spacing: .62px;
     z-index: 2;
 }
 
@@ -235,4 +392,14 @@ h4 {
 ul {
     list-style-type: none;
 }
+
+/*Social Icons*/
+#social ul li {
+    display: inline;
+    margin-right: 12px;
+}
+
+
+
+
 
