@@ -24,8 +24,6 @@ body{
 
 #side-bar {
     top: 0;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #F8F8F8;
@@ -76,11 +74,16 @@ body{
         position: fixed;
         width: 100%;
         top: 0;
+        z-index: 4;
     }
     
     #profile p {
         margin-top: 20px;
         width: 40%;
+    }
+    
+    #profile h2 {
+    margin-top: 80px;
     }
 }
 
@@ -97,6 +100,8 @@ body{
         width: 100%;
         display: inline-block;
         height: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     
     #works {
@@ -109,12 +114,16 @@ body{
         position: fixed;
         width: 100%;
         top: 0;
+        z-index: 6;
     }   
     
     #profile p {
         margin-top: 20px;
         max-width: 60%;
-        
+    }
+    
+    #profile h2 {
+    margin-top: 100px;
     }
 }
 
@@ -127,9 +136,20 @@ body{
     font-size: 14px;
     font-weight: 300;
     color: #959595;
-    margin: 20px;
+    margin: 0px 20px 0px 20px;
     letter-spacing: .7px;
     }   
+    
+    nav .logo {
+    margin-top: 20px;
+    margin-left: 66px;
+    }
+    
+    #side-bar {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    
     
     .project {
     padding: 22px 66px 42px 66px;   
@@ -222,6 +242,16 @@ body{
     letter-spacing: .7px;
     }   
     
+    nav .logo {
+    margin-left: 8%;
+    margin-top: 23px;
+    }
+    
+    #side-bar {
+    padding-left: 8%;
+    padding-right: 8%;
+    }
+    
     .project {
     padding: 20px 8% 20px 8%;   
     }
@@ -247,6 +277,10 @@ body{
     font-size: 15px;
     letter-spacing: 1.3px;
     margin-top: 20px;
+    }
+    
+    #profile h2 {
+    margin-top: 80px;
     }
 
     p{
@@ -299,14 +333,17 @@ body{
 
 /*Nav Menu*/
 nav{
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     padding-right: 5%;
-    z-index: 2;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
 }
 nav ul {
     text-align: right;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 nav ul li {
@@ -354,9 +391,6 @@ h2{
     z-index: 2;
 }
 
-#profile h2 {
-    margin-top: 80px;
-}
 
 p{
     font-weight: 300;
