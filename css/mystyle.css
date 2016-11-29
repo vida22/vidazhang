@@ -54,6 +54,7 @@ body{
         top: 20%;
         display: block;
         position: fixed;
+        max-width: 300px;
     }
     
     #side-bar {
@@ -67,7 +68,7 @@ body{
         left: 30%;
         position: relative;
         display: block;
-        width: 70%;
+        width: 90%;
     }
     
     nav {
@@ -78,8 +79,8 @@ body{
     }
     
     #profile p {
-        margin-top: 20px;
-        width: 40%;
+    margin-top: 25px;
+    width: 80%;
     }
     
     #profile h2 {
@@ -118,7 +119,7 @@ body{
     }   
     
     #profile p {
-        margin-top: 20px;
+        margin-top: 25px;
         max-width: 60%;
     }
     
@@ -274,7 +275,7 @@ body{
     }
 
     h2{
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1.3px;
     margin-top: 20px;
     }
@@ -396,6 +397,11 @@ p{
     font-weight: 300;
     color: #484848;
     z-index: 2;
+}
+
+p b {
+    font-weight: 400;
+    color: #303030;
 }
 
 
