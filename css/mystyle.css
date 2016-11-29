@@ -135,8 +135,6 @@ body{
     
     .menu {
     font-size: 14px;
-    font-weight: 300;
-    color: #959595;
     margin: 0px 20px 0px 20px;
     letter-spacing: .7px;
     }   
@@ -237,8 +235,6 @@ body{
     
     .menu {
     font-size: 12px;
-    font-weight: 300;
-    color: #959595;
     margin: 10px;
     letter-spacing: .7px;
     }   
@@ -341,6 +337,12 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+
+.menu {
+    font-weight: 400;
+    color: #959595;
+}
+
 nav ul {
     text-align: right;
     margin-top: 20px;
@@ -352,9 +354,14 @@ nav ul li {
 }
 
 
+
 nav ul li a:hover{
     text-decoration: none;
     color: #252525;
+    border-bottom: 2px #303030 solid;
+    text-decoration: none;
+    color: #303030;
+    padding-bottom: 1px;
 }
 
 
@@ -436,8 +443,29 @@ ul {
 /*Social Icons*/
 #social ul li {
     display: inline;
-    margin-right: 12px;
+    margin-right: 15px;
 }
+
+
+.social:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .2s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .2s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .2s ease-in-out;
+} 
+
+.social {
+  -webkit-filter: grayscale(100%) opacity(70%);
+  -webkit-transition: .2s ease-in-out;
+  -moz-filter: grayscale(100%) opacity(70%); 
+  -moz-transition: .2s ease-in-out;
+  -o-filter: grayscale(100%) opacity(70%); 
+  -o-transition: .2s ease-in-out;
+}
+
+
 
 
 
