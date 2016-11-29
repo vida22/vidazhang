@@ -2,7 +2,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-a, li {
+a, li, .logo {
     cursor: pointer;
     cursor: hand;
 }
@@ -33,6 +33,34 @@ body{
 }
 
 
+/*progress bar*/
+progress {
+    bottom: 120px;
+    left: 200px;
+    padding: 0px;
+    position: absolute;
+    
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    
+    width: 180px;
+    height: 10px;
+    background-color: #E3E3E3 !important;
+    color: #F15A95 !important;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #F15A95;
+}
+
+progress::-moz-progress-bar {
+  background-color: #F15A95;
+}
 
 /*Spaces*/
 
@@ -51,7 +79,7 @@ body{
 /*Layout for desktop*/
 @media (min-width: 1024px) {
     #profile {
-        top: 20%;
+        top: 10%;
         display: block;
         position: fixed;
         max-width: 300px;
@@ -89,7 +117,7 @@ body{
 }
 
 /*Layout for tablet or small desktop*/
-@media (min-width: 480px) and (max-width:1024px) {
+@media (min-width: 480px) and (max-width:1023px) {
     #profile {
         display: block;
         position: relative;
@@ -124,7 +152,11 @@ body{
     }
     
     #profile h2 {
-    margin-top: 100px;
+    margin-top: 120px;
+    }
+    
+    progress {
+    display: none;
     }
 }
 
@@ -181,12 +213,13 @@ body{
 
     p{
     font-size: 17px;
-    line-height: 24px;
+    line-height: 25px;
     letter-spacing: .75px;
     }
 
     #works p {
     margin: 15px 0px 15px 0px;
+    max-width: 75%;
     }
     
 
@@ -212,8 +245,8 @@ body{
     }   
 
     .social {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25spx;
     }
     
     #social ul {
@@ -322,7 +355,11 @@ body{
     margin-bottom: 30px;
     padding: 0px;
     margin-left: 0px;
-}
+    }
+    
+    progress {
+    display: none;
+    }
 
 }
 
@@ -379,7 +416,7 @@ hr {
 footer{
     font-size: 12px;
     font-weight: 300;
-    color: #959595;
+    color: #525252;
     letter-spacing: 0.41px;
     position: relative;
 }
@@ -443,11 +480,12 @@ ul {
 /*Social Icons*/
 #social ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 
 .social:hover {
+  filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -webkit-transition: .2s ease-in-out;
   -moz-filter: grayscale(0%);
@@ -457,12 +495,19 @@ ul {
 } 
 
 .social {
+  filter: grayscale(100%) opacity(70%);
   -webkit-filter: grayscale(100%) opacity(70%);
   -webkit-transition: .2s ease-in-out;
   -moz-filter: grayscale(100%) opacity(70%); 
   -moz-transition: .2s ease-in-out;
   -o-filter: grayscale(100%) opacity(70%); 
   -o-transition: .2s ease-in-out;
+}
+
+.arrow-down {
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    display: inline-block;
 }
 
 
