@@ -35,16 +35,16 @@ body{
 
 /*progress bar*/
 progress {
-    bottom: 120px;
-    left: 200px;
+    bottom: -6px;
+    right: -5px;
     padding: 0px;
     position: absolute;
     
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
-    
-    width: 180px;
-    height: 10px;
+    transform-origin: 100% 0%;
+    width: 100vh;
+    height: 6px;
     background-color: #E3E3E3 !important;
     color: #F15A95 !important;
     border: none;
@@ -61,6 +61,7 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: #F15A95;
 }
+
 
 /*Spaces*/
 
