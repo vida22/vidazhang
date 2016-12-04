@@ -190,6 +190,10 @@ progress::-moz-progress-bar {
     padding: 22px 84px 42px 84px;   
     }
     
+    footer {
+    margin-left: -16px;
+    }
+    
     .project-sum{
         display: none;
     }
@@ -296,6 +300,10 @@ progress::-moz-progress-bar {
     margin: 30px 0px 30px 0px;
     }
     
+    .project-sum h4 {
+        margin-bottom: 60px;
+    }
+    
 /*
     .indent {
     transform: translateX(20px);
@@ -333,7 +341,7 @@ progress::-moz-progress-bar {
     .ui {
     display: block;
     margin: 70px auto 0px auto;
-    width: 250px;
+    height: 519px;
     
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1); 
