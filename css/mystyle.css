@@ -270,7 +270,11 @@ progress::-moz-progress-bar {
     
     
     h3.project-number {
-        margin-bottom: -15px;
+        margin-bottom: -15px; 
+    }
+    
+    .project-details h3.project-number {
+        color: #252525;
     }
 
     p{
@@ -629,7 +633,7 @@ h5 {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    margin-top: 95px;
+    margin-top: 104px;
     margin-bottom: -15px;
 }
 
