@@ -29,7 +29,13 @@ body{
     background: #F8F8F8;
     -moz-box-shadow: 1px 1px 1px 1px #f6f6f6;
     -webkit-box-shadow:1px 1px 1px 1px #f6f6f6;
-    z-index: 5;
+    z-index: 4;
+}
+
+
+/* add this class using javascript*/
+.nav-up {
+  top: -60px; 
 }
 
 
@@ -101,10 +107,7 @@ progress::-moz-progress-bar {
     }
     
     nav {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 4;
+        z-index: 3;
     }
     
     #profile p {
@@ -113,7 +116,7 @@ progress::-moz-progress-bar {
     }
     
     #profile h2 {
-    margin-top: 80px;
+    margin-top: 100px;
     }
 }
 
@@ -130,7 +133,7 @@ progress::-moz-progress-bar {
         width: 100%;
         display: inline-block;
         height: 100%;
-        padding-left: 50px;
+        padding-left: 100px;
         padding-right: 50px;
     }
     
@@ -141,11 +144,9 @@ progress::-moz-progress-bar {
     }
     
     nav {
-        position: fixed;
-        width: 100%;
-        top: 0;
         z-index: 6;
     }   
+    
     
     #profile p {
         margin-top: 25px;
@@ -178,13 +179,13 @@ progress::-moz-progress-bar {
     }
     
     #side-bar {
-    padding-left: 50px;
+    padding-left: 84px;
     padding-right: 50px;
     }
     
     
     .project {
-    padding: 22px 66px 42px 66px;   
+    padding: 22px 100px 42px 100px;   
     }
     
     footer{
@@ -203,7 +204,7 @@ progress::-moz-progress-bar {
     letter-spacing: .7px;
     margin-top: 30px;
     margin-bottom: 35px;
-    max-width: 72%;
+    max-width: 90%;
     }
 
     h2{
@@ -221,7 +222,7 @@ progress::-moz-progress-bar {
 
     #works p {
     margin: 15px 0px 15px 0px;
-    max-width: 75%;
+    max-width: 90%;
     }
     
 
@@ -231,6 +232,12 @@ progress::-moz-progress-bar {
     letter-spacing: 0.7px;
     margin: 30px 0px 30px 0px;
     }
+    
+/*
+    .indent {
+    transform: translateX(20px);
+    }
+*/
 
 
     .details {
@@ -239,6 +246,7 @@ progress::-moz-progress-bar {
     margin: 25px 0px 25px 0px;
     letter-spacing: .62px;
     }
+    
     
     /*images in non-mobile*/
     .logo {
@@ -257,21 +265,31 @@ progress::-moz-progress-bar {
     margin-bottom: 100px;
     padding: 0;
     }
+    
+    /*Project Images*/
+    .ui {
+    display: block;
+    margin: 70px auto 0px auto;
+    width: 250px;
+    }
+    
+    .project-ui {
+        display: block;
+        width: 90%;
+    }
 }
 
 
 /*Layout and typography for mobile*/
 @media (max-width: 480px) {
     nav {
-        position: fixed;
-        width: 100%;
-        top: 0;
+        z-index: 6;
     }  
     
     .menu {
-    font-size: 12px;
-    margin: 10px;
-    letter-spacing: .7px;
+        font-size: 12px;
+        margin: 10px;
+        letter-spacing: .7px;
     }   
     
     nav .logo {
@@ -341,6 +359,7 @@ progress::-moz-progress-bar {
     letter-spacing: .62px;
     }
     
+    
     /*images in mobile*/
     .logo {
     width: 15px;
@@ -350,6 +369,7 @@ progress::-moz-progress-bar {
     .social {
     width: 20px;
     height: 20px;
+    z-index: 4;
     }
     
     #social ul {
@@ -363,6 +383,13 @@ progress::-moz-progress-bar {
     progress {
     display: none;
     }
+    
+    /*Project Images*/
+    .ui {
+        display: block;
+        margin: 30px auto 0px auto;
+        width: 50%;
+    }
 
 }
 
@@ -371,11 +398,19 @@ progress::-moz-progress-bar {
 /*Nav Menu*/
 nav{
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     padding-right: 5%;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    width: 100%;
+}
+
+.border{
+    border-bottom: #EDEDED solid thin;
 }
 
 .menu {
@@ -459,6 +494,10 @@ h4 {
     z-index: 2;
 }
 
+a .details:visited { 
+    color: #484848;
+}
+
 
 .details {
     /*pink links*/
@@ -507,12 +546,16 @@ ul {
   -o-transition: .2s ease-in-out;
 }
 
+
+
+
+/*
 .arrow-down {
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -webkit-transform: rotate(90deg);  Chrome, Safari, Opera 
     transform: rotate(90deg);
     display: inline-block;
 }
-
+*/
 
 
 
