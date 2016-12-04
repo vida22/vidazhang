@@ -34,7 +34,6 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
-    console.log("ran...");
     var st = $(this).scrollTop();
     
     // Make sure they scroll more than delta
@@ -46,10 +45,12 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('nav').removeClass('nav-down').addClass('nav-up border');
+        $('.project-sum').addClass('hidden');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('nav').removeClass('nav-up').addClass('nav-down');
+            $('.project-sum').removeClass('hidden');
         }
     }
     
