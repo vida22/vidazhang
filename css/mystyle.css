@@ -544,7 +544,7 @@ nav{
 }
 
 .menu.current {
-    color: #E3518A;
+    color: #303030;
 }
 
 nav ul {
@@ -561,12 +561,12 @@ nav ul li {
 
 nav ul li a:hover{
     text-decoration: none;
-    color: #252525;
     border-bottom: 2px #303030 solid;
     text-decoration: none;
     color: #303030;
     padding-bottom: 1px;
 }
+
 
 /*Sidebar*/
 
