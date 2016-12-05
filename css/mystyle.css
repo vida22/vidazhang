@@ -533,6 +533,7 @@ nav{
     width: 100%;
 }
 
+
 .border{
     border-bottom: #EDEDED solid thin;
 }
@@ -540,6 +541,10 @@ nav{
 .menu {
     font-weight: 400;
     color: #959595;
+}
+
+.menu.current {
+    color: #E3518A;
 }
 
 nav ul {
