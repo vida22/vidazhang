@@ -27,24 +27,6 @@
 
 $(document).ready(function() {
 
-    var FIREFOX = /Firefox/i.test(navigator.userAgent);
-
-    if (FIREFOX) {
-        document.getElementById("hide-non-chrome").style.display="none";
-    }    
-
-//Typed
-    $(function(){
-        $(".sentence1").typed({
-            strings: ["^3000making things.^400","solving problems.^400","transforming complex information into simple design."],
-            typeSpeed: 1, // typing speed
-            backDelay: 750, // pause before backspacing
-            loop: false, // loop on or off (true or false)
-            loopCount: false, // number of loops, false = infinite
-            showCursor: true,
-            callback: function(){ } // call function after typing is done
-        });
-    });
     
 //Progress Bar    
   var winHeight = $(window).height(), 
