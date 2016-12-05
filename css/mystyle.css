@@ -28,6 +28,11 @@ body{
     padding-bottom: 20px;
 }
 
+#intro-pic {
+    width: 90%;
+}
+
+
 /*previous and next project*/
 
 .jump {
@@ -56,7 +61,7 @@ body{
 }
 
 .hidden { 
-    opacity: 0;
+    display: none;
 }
 
 
@@ -238,6 +243,9 @@ progress::-moz-progress-bar {
     padding-right: 50px;
     }
     
+    #intro-content {
+        width: 90%;
+    }
     
     footer{
     padding-left: 100px;
@@ -277,9 +285,6 @@ progress::-moz-progress-bar {
         margin-bottom: -15px; 
     }
     
-    .project-details h3.project-number {
-        color: #252525;
-    }
 
     p{
     font-size: 17px;
@@ -291,6 +296,8 @@ progress::-moz-progress-bar {
     margin: 15px 0px 15px 0px;
     max-width: 90%;
     }
+    
+    
     
 
     h4 {
@@ -321,27 +328,34 @@ progress::-moz-progress-bar {
     
     /*images in non-mobile*/
     .logo-img {
-    width: 22px;
-    height: 23px;
-    }   
+        width: 22px;
+        height: 23px;
+    }  
+    
+    #profile-pic {
+        width: 166px;
+        height: 166px;
+        display: block;
+        margin: 100px auto 50px auto;   
+    }
 
     .social {
-    width: 25px;
-    height: 25spx;
+        width: 25px;
+        height: 25spx;
     }
     
     #social ul {
-    /*social icons in non-mobile*/
-    margin-top: 40px;
-    margin-bottom: 100px;
-    padding: 0;
+        /*social icons in non-mobile*/
+        margin-top: 40px;
+        margin-bottom: 100px;
+        padding: 0;
     }
     
     /*Project Images*/
     .ui {
-    display: block;
-    margin: 70px auto 0px auto;
-    height: 519px;
+        display: block;
+        margin: 70px auto 0px auto;
+        height: 519px;
     
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1); 
@@ -382,13 +396,13 @@ progress::-moz-progress-bar {
     }   
     
     nav .logo {
-    margin-left: 8%;
-    margin-top: 23px;
+        margin-left: 8%;
+        margin-top: 23px;
     }
     
     .sidebar {
-    padding-left: 8%;
-    padding-right: 8%;
+        padding-left: 8%;
+        padding-right: 8%;
     }
     
     .project-sum{
@@ -396,25 +410,25 @@ progress::-moz-progress-bar {
     }
     
     .project {
-    padding: 20px 8% 20px 8%;   
+        padding: 20px 8% 20px 8%;   
     }
     
     footer {
-    padding-left: 8%;
-    margin-top: 30px;
-    padding-bottom: 20px;
+        padding-left: 8%;
+        margin-top: 30px;
+        padding-bottom: 20px;
     }
     
     hr {
-    margin-bottom: 60px;
+        margin-bottom: 60px;
     }
     
     h1{
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: .7px;
-    margin-top: 30px;
-    margin-bottom: 35px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: .7px;
+        margin-top: 30px;
+        margin-bottom: 35px;
     }
     
     h2{
@@ -426,63 +440,63 @@ progress::-moz-progress-bar {
     }
 
     h3{
-    font-size: 13px;
-    letter-spacing: 1.3px;
-    margin-top: 20px;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+        margin-top: 20px;
     }
     
     #profile h3 {
-    margin-top: 80px;
+        margin-top: 80px;
     }
 
     p{
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: .75px;
-    margin: 15px 0px 15px 0px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .75px;
+        margin: 15px 0px 15px 0px;
     }
 
 
     h4 {
-    /*project tags*/
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 0.7px;
-    margin: 30px 0px 30px 0px;
-    max-width: 80%;
+        /*project tags*/
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.7px;
+        margin: 30px 0px 30px 0px;
+        max-width: 80%;
     }
 
 
     .details {
-    /*pink links*/
-    font-size: 12px;
-    margin: 25px 0px 25px 0px;
-    letter-spacing: .62px;
+        /*pink links*/
+        font-size: 12px;
+        margin: 25px 0px 25px 0px;
+        letter-spacing: .62px;
     }
     
     
     /*images in mobile*/
-    .logo-img {
-    width: 15px;
-    height: 16px;
+        .logo-img {
+        width: 15px;
+        height: 16px;
     }   
 
     .social {
-    width: 20px;
-    height: 20px;
-    z-index: 4;
+        width: 20px;
+        height: 20px;
+        z-index: 4;
     }
     
     #social ul {
     /*social icons in mobile*/
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0px;
-    margin-left: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0px;
+        margin-left: 0px;
     }
     
     progress {
-    display: none;
+        display: none;
     }
     
     /*Project Images*/
@@ -493,9 +507,14 @@ progress::-moz-progress-bar {
     }
     
     .project-img-long {
-    width: 100%;
+        width: 100%;
     }
-
+    
+    #profile-pic {
+        width: 30%;
+        display: block;
+        margin: 30px auto 30px auto;
+    }
 }
 
 
@@ -614,6 +633,10 @@ h3{
     color: #E3518A;
 }
 
+.project-details h3.project-number {
+    color: #252525;
+}
+
 
 p{
     font-weight: 300;
@@ -624,6 +647,15 @@ p{
 p b {
     font-weight: 400;
     color: #303030;
+}
+
+p.intro-text {
+    display: inline;
+    font-weight: 400;
+}
+
+#intro p b{
+    font-weight: 500;
 }
 
 
@@ -707,6 +739,57 @@ ul {
     direction: rtl;
     background-color: #ffffff;
 }
+
+.logo-img:hover {
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.2); 
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.2); 
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.2);
+        transition: all 200ms ease-in;
+}
+
+.logo-img {
+    -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1); 
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1); 
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+}
+
+/*Typed and Blinking Cursor*/
+.typed-cursor{
+    opacity: 1;
+    font-weight: 500;
+    color: #E3518A;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.sentence1 {
+    font-weight: 500;
+    color: #E3518A;
+}
+
+
 
 
 

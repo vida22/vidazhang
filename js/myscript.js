@@ -1,4 +1,50 @@
-$(document).on('ready', function() {
+//$(document).ready(function() {
+//      //add todo
+//      $("#add-button").click(addTodo);  
+//      //delete todo
+//      $(document).on("click",'.material-icons.delete-button', deleteTodo);
+//      //show and hide placeholder text for cards
+//      checkTodos();
+//      $(document).on("click",'#delete-todo-button', checkTodos)
+//      //complete todo
+//      $(document).on("click",'.checkbox', completeTodo);
+//      //reset modal
+//      $('.modal').on('hidden.bs.modal', resetModal);
+//      //auto focus
+//      $('#addTodoModal').on('shown.bs.modal',function(){
+//          $('#todo-title').focus();
+//      })
+//      //validate form
+//      $("#addTodoModal").click(validateForm);
+//    });
+//
+//
+//
+//
+////Show and hide placeholder text for cards
+//function checkTodos(){}
+
+
+$(document).ready(function() {
+
+    var FIREFOX = /Firefox/i.test(navigator.userAgent);
+
+    if (FIREFOX) {
+        document.getElementById("hide-non-chrome").style.display="none";
+    }    
+
+//Typed
+    $(function(){
+        $(".sentence1").typed({
+            strings: ["^3000making things.^400","solving problems.^400","transforming complex information into simple design."],
+            typeSpeed: 1, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            showCursor: true,
+            callback: function(){ } // call function after typing is done
+        });
+    });
     
 //Progress Bar    
   var winHeight = $(window).height(), 

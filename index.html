@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Vida Zhang, UX Designer</title>
+    <title>Vida Zhang</title>
 
 <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!--Jquery-->
     <script src ="https://code.jquery.com/jquery-latest.min.js"></script>
+        <!--Typed-->
+    <script src="/js/typed.js"></script>  
+      
 <!--Google icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -27,7 +30,7 @@
         <ul>
             <li><a class='menu' href="/about.html/">About Me</a></li>
             <li><a class='menu' href="/resume.html/">Resume</a></li>
-            <li><a class='menu' href="index.html">Works</a></li>
+            <li><a class='menu' href="index.html">Portfolio</a></li>
         </ul>
     </nav>  
       
@@ -37,7 +40,7 @@
         </a>
         <div id="profile">
             <h3>Vida Zhang</h3>
-            <p><b>UX Designer</b> and Master of HCI at <b>CMU</b>. I also play with data and code.</p>
+            <p><b>Product Designer</b> and Master of HCI at <b>CMU</b>. I also play with data and code.</p>
             <div id="social">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/vidazhang" target="_blank"><img class="social" src="img/linkedin.png" alt="LinkedIn" id="linkedin-icon"></a></li>
@@ -53,8 +56,15 @@
     
 
     <div id="works">
-        <div class='project' id='intro'>
-            <img class='ui' href="img/profile-pic.png">
+        <div class='project' id="intro">
+            
+            <div id="intro-pic">
+                <img id="profile-pic" src="img/profile-pic.png">
+            </div>
+            <div id="intro-content">
+                <p class="intro-text">Hi, I'm Vida Zhang. I'm a <b>product designer</b> and an <b>information wrangler</b>. In my pre-designer life, I did data science and business. <br><br></p>
+                <p id="hide-non-chrome" class="intro-text">I enjoy <span><p class="intro-text sentence1"></p></span></p>
+            </div>
         </div>
         <div class='project'>
         <hr>
@@ -113,7 +123,10 @@
     
 <!--JS-->
     <script src ="js/myscript.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+
+      
   </body>
 </html>
   
