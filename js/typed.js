@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-//My Typed
+//My Typed Script
 $(document).ready(function() {
     $(function(){
         console.log("typed ran");

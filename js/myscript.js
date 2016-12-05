@@ -1,32 +1,7 @@
-//$(document).ready(function() {
-//      //add todo
-//      $("#add-button").click(addTodo);  
-//      //delete todo
-//      $(document).on("click",'.material-icons.delete-button', deleteTodo);
-//      //show and hide placeholder text for cards
-//      checkTodos();
-//      $(document).on("click",'#delete-todo-button', checkTodos)
-//      //complete todo
-//      $(document).on("click",'.checkbox', completeTodo);
-//      //reset modal
-//      $('.modal').on('hidden.bs.modal', resetModal);
-//      //auto focus
-//      $('#addTodoModal').on('shown.bs.modal',function(){
-//          $('#todo-title').focus();
-//      })
-//      //validate form
-//      $("#addTodoModal").click(validateForm);
-//    });
-//
-//
-//
-//
-////Show and hide placeholder text for cards
-//function checkTodos(){}
-
-
 $(document).ready(function() {
 
+//Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
     
 //Progress Bar    
   var winHeight = $(window).height(), 

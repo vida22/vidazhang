@@ -784,7 +784,7 @@ ul {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-.sentence1 {
+p.sentence1 {
     font-weight: 500;
     color: #E3518A;
 }
