@@ -25,7 +25,7 @@ $(document).ready(function() {
     $(function(){
         console.log("typed ran");
         $(".sentence1").typed({
-            strings: ["^3000making things.^400","solving problems.^400","transforming complex information into simple design. "],
+            strings: ["^3000making things.^400","solving problems.^400","lorem ipsum ..."], //transforming complex information into simple design.
             typeSpeed: 1, // typing speed
             backDelay: 750, // pause before backspacing
             loop: false, // loop on or off (true or false)
