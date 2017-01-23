@@ -380,8 +380,9 @@ progress::-moz-progress-bar {
     /*Project Images*/
     .ui {
         display: block;
-        margin: 70px auto 0px auto;
+        margin: 60px auto 0px auto;
         height: 519px;
+        padding-top: 10px;
     
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1); 
