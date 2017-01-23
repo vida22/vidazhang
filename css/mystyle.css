@@ -29,7 +29,7 @@ body{
 }
 
 #intro-pic {
-    width: 90%;
+    margin: auto;
 }
 
 
@@ -332,6 +332,7 @@ progress::-moz-progress-bar {
         margin-top: 15px;
         color: #959595;
     }
+
     
     .project-sum h4 {
         margin-bottom: 60px;
@@ -359,8 +360,7 @@ progress::-moz-progress-bar {
     }  
     
     #profile-pic {
-        width: 166px;
-        height: 166px;
+        height: 180px;
         display: block;
         margin: 100px auto 50px auto;   
     }
@@ -766,6 +766,12 @@ a .details:visited {
 
 ul {
     list-style-type: none;
+}
+
+.material-icons {
+/*google icons*/
+    font-size: 26px;
+    color: #656565;
 }
 
 /*Social Icons*/
