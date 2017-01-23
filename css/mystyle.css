@@ -153,8 +153,8 @@ progress::-moz-progress-bar {
         width: 80%;
     }
     
-    #profile h3 {
-        margin-top: 100px;
+    #profile h2 {
+        margin-top: 86px;
     }
     
     .project-img-long {
@@ -373,7 +373,7 @@ progress::-moz-progress-bar {
     #social ul {
         /*social icons in non-mobile*/
         margin-top: 40px;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
         padding: 0;
     }
     
@@ -770,8 +770,8 @@ ul {
 
 .material-icons {
 /*google icons*/
-    font-size: 26px;
-    color: #656565;
+    font-size: 20px;
+    color: #EF7BA8;
 }
 
 /*Social Icons*/
