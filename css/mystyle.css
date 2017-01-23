@@ -381,6 +381,7 @@ progress::-moz-progress-bar {
     .ui {
         display: block;
         margin: 60px auto 0px auto;
+        padding-top: 10px;
         height: 519px;
         padding-top: 10px;
     
