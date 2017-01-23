@@ -2,7 +2,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-a, li, .logo {
+a, nav li, .logo {
     cursor: pointer;
     cursor: hand;
 }
@@ -57,7 +57,7 @@ body{
 
 /* animation*/
 .nav-up {
-  top: -60px; 
+  top: -70px; 
 }
 
 .hidden { 
@@ -161,6 +161,16 @@ progress::-moz-progress-bar {
         max-width: 158%;
         padding-right: 10%;
     }
+    
+    .project-img-med {
+        width: 626px;
+    }
+    
+    .project-vid-long {
+        width: 1200px;
+        float: right;
+        padding-left: 100px;
+    }
 
 }
 
@@ -220,6 +230,16 @@ progress::-moz-progress-bar {
     .project-img-long {
     width: 100%;
     }
+    
+    .project-img-med {
+        width: 626px;
+    }
+    
+    .project-vid-long {
+    width: 100vw;
+    float: right;
+    padding-left: 170px;
+    }
 }
 
 
@@ -258,9 +278,9 @@ progress::-moz-progress-bar {
     }
     
     h1{
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: .7px;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: .4px;
     margin-top: 30px;
     margin-bottom: 35px;
     max-width: 90%;
@@ -269,15 +289,18 @@ progress::-moz-progress-bar {
     h3{
     font-size: 15px;
     letter-spacing: 1.3px;
-    margin-top: 20px;
+    margin-top: 40px;
     }
     
     h2{
-        font-size: 20px;
-        letter-spacing: 1.3px;
-        line-height: 26px;
+        font-size: 25px;
+        letter-spacing: .7px;
+        line-height: 35px;
         max-width: 90%;
-        color: #252525;
+        color: #303030;
+        font-weight: 500;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     
     
@@ -286,10 +309,10 @@ progress::-moz-progress-bar {
     }
     
 
-    p{
+    p, li{
     font-size: 17px;
-    line-height: 25px;
-    letter-spacing: .75px;
+    line-height: 27px;
+    letter-spacing: .6px;
     }
 
     #works p {
@@ -297,14 +320,17 @@ progress::-moz-progress-bar {
     max-width: 90%;
     }
     
-    
-    
 
     h4 {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
     letter-spacing: 0.7px;
     margin: 30px 0px 30px 0px;
+    }
+    
+    .project h4 {
+        margin-top: 15px;
+        color: #959595;
     }
     
     .project-sum h4 {
@@ -449,7 +475,7 @@ progress::-moz-progress-bar {
         margin-top: 80px;
     }
 
-    p{
+    p, li{
         font-size: 14px;
         line-height: 20px;
         letter-spacing: .75px;
@@ -476,7 +502,7 @@ progress::-moz-progress-bar {
     
     
     /*images in mobile*/
-        .logo-img {
+    .logo-img {
         width: 15px;
         height: 16px;
     }   
@@ -510,6 +536,16 @@ progress::-moz-progress-bar {
         width: 100%;
     }
     
+    .project-img-med {
+        width: 100%;
+    }
+    
+    .project-vid-long {
+        width: 100vw;
+        float: right;
+        padding-left: 60px;
+    }
+    
     #profile-pic {
         width: 30%;
         display: block;
@@ -522,7 +558,7 @@ progress::-moz-progress-bar {
 /*Nav Menu*/
 nav{
     padding-top: 0px;
-    padding-bottom: 17px;
+    padding-bottom: 10px;
     padding-right: 5%;
     background-color: #ffffff;
     display: flex;
@@ -611,17 +647,17 @@ footer{
 /*Typography for All Screensizes*/
 
 h1{
-    color: #252525;
+    color: #484848;
     font-weight: 500;
     z-index: 2;
 }
 
-h1 a {
+h2 a {
     color: #252525;
 }
 
-h1 a:hover{
-    color: #424242;
+h2 a:hover{
+    color: #E3518A;
     text-decoration: none;
 }
 
@@ -643,15 +679,40 @@ h3{
 }
 
 
-p{
-    font-weight: 300;
-    color: #484848;
+p, li {
+    font-weight: 400;
+    color: #454545;
     z-index: 2;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
 p b {
-    font-weight: 400;
+    font-weight: 500;
     color: #303030;
+}
+
+li b {
+    font-weight: 500;
+    color: #303030;
+}
+
+p a {
+    color: #4689F2;
+    font-weight: 400;
+    border-bottom: 1px #bdbdbd dashed;
+}
+
+p a:hover {
+    color: #3B99FC;
+    text-decoration: none;
+    border-color: #3B99FC;
 }
 
 p.intro-text {
@@ -666,8 +727,8 @@ p.intro-text {
 
 h4 {
     /*project keywords*/
-    font-weight: 400;
-    color: #959595;
+    font-weight: 500;
+    color: #707070;
     z-index: 2;
 }
 
@@ -738,11 +799,23 @@ ul {
 /*Images*/
 .project-img-div-long {
     width: 100%;
-    margin: 60px 0px 60px 0px;
+    margin: 40px 0px 10px 0px;
     z-index: 5;
     overflow: visible;
     direction: rtl;
     background-color: #ffffff;
+}
+
+.project-img-div-med {
+    width: 100%;
+    margin: 40px 0px 10px 0px;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+.project-vid-div-long {
+    width: 100vw;
+    float: right;
 }
 
 .logo-img:hover {
@@ -764,6 +837,7 @@ ul {
         -moz-transform: scale(1);
         transition: all 200ms ease-in;
 }
+
 
 /*Typed and Blinking Cursor*/
 .typed-cursor{
