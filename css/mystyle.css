@@ -154,7 +154,7 @@ progress::-moz-progress-bar {
     }
     
     #profile h2 {
-        margin-top: 86px;
+        margin-top: 82px;
     }
     
     .project-img-long {
@@ -219,7 +219,7 @@ progress::-moz-progress-bar {
         max-width: 60%;
     }
     
-    #profile h3 {
+    #profile h2 {
     margin-top: 120px;
     }
     
@@ -473,7 +473,7 @@ progress::-moz-progress-bar {
         margin-top: 20px;
     }
     
-    #profile h3 {
+    #profile h2 {
         margin-top: 80px;
     }
 
@@ -668,7 +668,7 @@ h2 a:hover{
 h3{
     font-weight: 500; 
     text-transform: uppercase;
-    color: #252525;
+    color: #E3518A;
     z-index: 2;
 }
 
@@ -676,7 +676,7 @@ h3{
     color: #E3518A;
 }
 
-.project-details h3.project-number {
+h3.project-number {
     color: #252525;
 }
 
@@ -773,7 +773,32 @@ ul {
 .material-icons {
 /*google icons*/
     font-size: 20px;
-    color: #EF7BA8;
+    color: #78BAFF;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.em {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#schools {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out; 
+    -o-transition: .3s ease-in-out;
+}
+
+#schools:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out; 
+    -o-transition: .3s ease-in-out;
 }
 
 /*Social Icons*/
