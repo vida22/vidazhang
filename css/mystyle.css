@@ -745,6 +745,10 @@ h5 {
     margin-bottom: -15px;
 }
 
+.secondary {
+    color: #999;
+}
+
 a .details:visited { 
     color: #484848;
 }
@@ -768,6 +772,10 @@ a .details:visited {
 
 ul {
     list-style-type: none;
+}
+
+.text-list {
+    list-style-type: circle;
 }
 
 .material-icons {
