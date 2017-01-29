@@ -424,6 +424,12 @@ progress::-moz-progress-bar {
         letter-spacing: .7px;
     }   
     
+    .dropdown-menu>li>a {
+        font-size: 12px;
+        letter-spacing: .7px;
+    }
+    
+    
     nav .logo {
         margin-left: 8%;
         margin-top: 23px;
@@ -587,24 +593,54 @@ nav{
 }
 
 nav ul {
-    text-align: right;
     margin-top: 20px;
     margin-bottom: 0px;
 }
 
 nav ul li {
-    float: right;
+    display: inline-block;
+}
+
+nav ul li ul li {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 
-
-nav ul li a:hover{
+nav>ul>li>a:hover{
     text-decoration: none;
     border-bottom: 2px #303030 solid;
     text-decoration: none;
     color: #303030;
     padding-bottom: 1px;
 }
+
+.dropdown-menu {
+    padding-top: 14px;
+    margin-top: 12px;
+}
+
+.dropdown-menu>li>a {
+    color: #959595;
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: #fff;
+    color: #F15A95; 
+}
+
+.dropdown-menu>li>a.current-proj {
+    color: #303030;
+}
+
+.dropdown-menu>li>a.current-proj:hover {
+    color: #303030;
+}
+
+
 
 
 /*Sidebar*/
@@ -894,7 +930,9 @@ ul {
 
 
 
-/*Typed and Blinking Cursor*/
+/*
+
+Typed and Blinking Cursor
 .typed-cursor{
     opacity: 1;
     font-weight: 500;
@@ -922,6 +960,7 @@ p.sentence1 {
     font-weight: 500;
     color: #E3518A;
 }
+*/
 
 
 
