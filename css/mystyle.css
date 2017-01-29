@@ -159,7 +159,7 @@ progress::-moz-progress-bar {
     
     .project-img-long {
         max-width: 158%;
-        padding-right: 10%;
+/*        padding-right: 10%;*/
     }
     
     .project-img-med {
@@ -167,9 +167,10 @@ progress::-moz-progress-bar {
     }
     
     .project-vid-long {
-        width: 1200px;
+        width: 100vw;
         float: right;
         padding-left: 100px;
+        padding-right: 4%;
     }
 
 }
@@ -238,7 +239,7 @@ progress::-moz-progress-bar {
     .project-vid-long {
     width: 100vw;
     float: right;
-    padding-left: 170px;
+    padding-left: 100px;
     }
 }
 
@@ -330,7 +331,7 @@ progress::-moz-progress-bar {
     
     .project h4 {
         margin-top: 15px;
-        color: #959595;
+/*        color: #959595;*/
     }
 
     
@@ -730,7 +731,8 @@ p.intro-text {
 h4 {
     /*project keywords*/
     font-weight: 500;
-    color: #707070;
+/*    color: #707070;*/
+    color: #959595;
     z-index: 2;
 }
 
@@ -878,6 +880,18 @@ ul {
         -moz-transform: scale(1);
         transition: all 200ms ease-in;
 }
+
+
+.project-vid-small {
+    width: 410px;
+    display: block;
+    margin: auto;
+    padding-right: 70px;
+    overflow: hidden;
+    
+}
+
+
 
 
 /*Typed and Blinking Cursor*/

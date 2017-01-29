@@ -48,7 +48,8 @@
             <h3 class="project-number">- 1 -</h3>
             <h1>Enhanced Android Privacy Settings</h1>
             <h4>Interaction design, UX research<br>
-                September 2016 - Now
+                September 2016 - Now <br><br>
+                <i>[shipped]</i>
             </h4>
                 
             <p>With the prevalence of sensor-based smart phone apps, mobile data privacy is getting more and more complex. 
@@ -56,7 +57,7 @@
             This project is <b>a collaboration between DARPA, CMU, BBN, and Invincea</b>, with the aim to achieve an order of magnitude improvements for mobile privacy. As the designer on the team (advised by <a href="https://www.hcii.cmu.edu/people/jason-hong" target="_blank">Professor Jason Hong</a>), my role is to reimagine the UX and UI for privacy settings in a privacy-enhanced Android OS.
             </p>
             
-                <p>[preview of the current iteration - animation]</p>
+<!--                <p>[preview of the current iteration - animation]</p>-->
                
                 
             <div class="space15px"></div>
@@ -69,11 +70,15 @@
             </ul>
             <p>In this project, we are building a future in which users can know all those information. 
             </p>  
-            <p>[an image showing what users know now, what users will know from this project; maybe use an Excel sheet like format?]
-            </p>
                 
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/DARPA/data-model.png" alt="Data Model">
+            </div>
+            <h4>Our project shows user what the permissions are used for and who are the data being sent to</h4>
+            <br>    
             
-            <p>This is the new data model that DARPA and CMU will be proposing to Android. Engineers have done the ground work. But now, here come the design challenges.<p> 
+            <p>This is the new data model that DARPA and CMU will be proposing to Android: all Android developers need to specify the purpose of each privacy data use; on top of that, we can now parse out what third-party libraries are using what privacy data.<br><br> 
+            Engineers have done the ground work. But now, here come the design challenges:<p> 
                 <ul class="text-list">
                     <li><b>How can we transfer all these data onto a ~2x4 inch mobile screen?</b></li> 
                     <li><b>How can we make sure privacy settings are easy to understand and manage?</b></li> 
@@ -96,27 +101,40 @@
             </ul>
                 
                 <p>My initial prototypes were focused on a flexible data filtering so that users can manage their privacy data in different views: app, permission, purpose, and third-party library. With research, <b>I experimented with all different ways of organizing the data, from traditional filtering, faceted metadata, to search-as-filter.</b></p>
-            <p>[image of different filtering prototypes - just organize it nicely]</p>
+            
+                <div class="project-img-div-long">
+                    <img class="project-img-long" src="../assets/DARPA/initial-exploration.png" alt="Initial exploration">
+                </div>
+                <h4>Initial prototypes explored ways to efficiently filter and search for apps, permission, purposes, and third-party libraries.</h4>
+                <br>  
             
             <div class="space15px"></div>
             <h3>LEARNING FROM USERS</h3>
-            <h2>People didn’t even know what to look, filter or search for</h2>
+            <h2>Users didn’t even know what to look, filter or search for</h2>
             <p>From testing my prototypes with users, I learned that <b>powerful functionality is useless unless users actually understand the subject matter (privacy) and have a clear mental model of the data structure</b>. 
             </p>
-            !!!illustrations!!!
-            <p>While these prototypes are powerful in finding apps with specific purposes and permissions (e.g. find the apps that use my location data for ads), people were not able to effectively use the filter/search function. Even with the help of filter labels and search suggestions, users are still not sure what to look for. </p>
-            <p><b>There's a lot more education work to do.</b></p>    
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/DARPA/quotes-filter.png" alt="Users don't know what to look for">
+            </div>
+            <h4>Users were confused about the terms and the structure in initial iterations.</h4>
+            <br>  
+                
+                
+            <p>While these prototypes are powerful in finding apps with specific purposes and permissions (e.g. find the apps that use my location data for ads), people were not able to effectively it. <b>There's a lot more education work to do.</b></p>    
             <br>    
+                
             <h2>People think they care about privacy, but in reality, no so much</h2>
-            <p>Another interesting finding from user interviews is that people don't care about privacy as much as they think. During the tests, they often lacked the motivation to actually delve into privacy settings and manage.</p>
-            <p>    
-            An illustration: "I usually only set up privacy settings once when they first install the app and never touch it again." 
+            <p>Another interesting finding from user interviews and tests is that people don't care about privacy as much as they think. During the tests, they often lacked the motivation to actually delve into privacy settings and manage.</p>
             
-            An illustration: "This is a lot of information..." ( Looking overwhelmed) </p>
+            <div class="project-img-div-med">
+                    <img class="project-img-med" src="../assets/DARPA/quotes-care.png" alt="Users don't care that much">
+            </div>
+            <h4>Users don't actually care about privacy as much as they think.</h4>
+            <br>  
             
-            <p>This means several things:</p>
+            <p>This means:</p>
             <ul class="text-list">
-                <li><b>Install-time privacy setting UI is crucial. </b><br>It’s likely to be the only time that most users will change their privacy settings. (The install-time UI is still work-in-progress.)</li>
+                <li><b>Install-time privacy setting UI is crucial. </b><br>It’s likely to be the only time that most users will review their privacy settings. (The install-time UI is still work-in-progress.)</li>
                 <li><b>We need to convince people to care more.</b><br> Users don't about their privacy as much as they think.</li>
                 <li><b>We need to further simplify the configuration.</b></li>
                     <ul class="text-list">
@@ -133,29 +151,47 @@
                 <br>
                 <h2>Onboarding tutorial helped users learn about data privacy and build up the mental model</h2>
                 <p><b>Action:</b> I add an onboarding tutorial to educate users of their data privacy, introducing the concept of permissions, purposes, and third-party libraries.<br> 
-                <b>Restuls:</b> Users were able to have a much more clear mental model when they go into settings. </p>
-                (show ui)
+                <b>Result:</b> Users were able to have a much more clear mental model when they go into settings. </p>
+
+                <div class="project-img-div-long">
+                    <img class="project-img-long" src="../assets/DARPA/onboarding-sketches.png" alt="Onboarding tutorial">
+                </div>
+                <h4>Onboarding tutorial explains permissions, purposes, and third-party libraries</h4>
                 
                 <br>
                 <h2>A more exploratory design lead to less confused and more engaged users</h2>
-                <p><b>Action:</b> Instead of just giving users categories of privacy data, I decided to show more detailed examples of apps and types of privacy information upfront, to help users explore possibilities.<br> 
-                <b>Restuls:</b> Users expressed fewer confusions, became more engaged, and showed more interest in managing their data privacy.</p>
-                (show ui - compare)
+                <p><b>Action:</b> Instead of just giving users category titles of privacy data, I decided to show more detailed examples of apps and types of privacy information upfront, to help users explore possibilities.<br> 
+                <b>Result:</b> Users expressed fewer confusions, became more engaged, and showed more interest in managing their data privacy.</p>
+                <br>
+                <br>
+                <div><video class="project-vid-long" autoplay loop><source src="../assets/DARPA/exploratory-home.m4v" type="video/mp4"</video></div>
+
+                <h4>Giving more detailed examples of privacy categories incentivises users to explore more.</h4>
                 
                 <br>
                 <h2>Applying crowdsourced recommended settings made only a button away</h2>
                 <p><b>Action:</b> While users can still micro-manage every single privacy setting, I also made the "Apply Recommended Settings" a prominent call-to-action. The user can preview the recommended settings before deciding whether to apply. <br> 
-                <b>Restuls:</b> Users, "Whew, this is so much easier! I trust Android's judgment."</p>
-                (show ui - process movie?)
+                <b>Result:</b> Users, "Whew, this is so much easier! I trust Android's judgment."</p>
+                <br>
                 
+                <div><video class="project-vid-small" autoplay loop><source src="../assets/DARPA/recommend2.mov" type="video/mp4"</video></div>
+                <h4>Giving more detailed examples of privacy categories incentivises users to explore more.</h4>
+            
                 <br>
                 <h2>Privacy data broken down into bite-sized bits</h2>
                 <p><b>Action:</b> Showing all the privacy data at one time turned out to be too overwhelming for normal users. Showing the data in bits and pieces helps reduce the mental strain the privacy settings impose on users. <br> 
-                <b>Restuls:</b> Users are less overwhelmed. The privacy settings are now more digestible. </p>
-                (show ui)
+                <b>Result:</b> Users are less overwhelmed. The privacy settings are now more digestible. </p>
+                <div><video class="project-vid-small" autoplay loop><source src="../assets/DARPA/bits.mov" type="video/mp4"</video></div>
+                <h4>Progressive disclosure (hiding secondary information and layering) creates and hierarchy and makes the information volume not as overwhelming.</h4>
                 
                 <br>
+                
                 <p>I'm continuing to work on this project in the spring semester. There are a lot more things to be explored, such as designing effective install-time UI, making the prototype more high-fidelity, and evaluating the effective of the current iteration with more users, etc. </p>
+                <div class="project-img-div-long">
+                    <img class="project-img-long" src="../assets/DARPA/sitemap.png" alt="Sitemap">
+                </div>
+                <h4>Sitemap of the latest iteration</h4>
+            <br>  
 
         
             <div class="space15px"></div>
