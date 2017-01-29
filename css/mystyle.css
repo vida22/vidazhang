@@ -102,6 +102,10 @@ progress::-moz-progress-bar {
     padding-bottom: 100px;
 }
 
+.space500px {
+    padding-bottom: 500px;
+}
+
 .space15px {
     padding-bottom: 15px;
 }
@@ -409,11 +413,21 @@ progress::-moz-progress-bar {
         display: block;
         width: 90%;
     }
+    
 }
 
 
 /*Layout and typography for mobile*/
+
 @media (max-width: 480px) {
+    .space500px {
+    padding-bottom: 0px;
+    }
+    
+    .illustration {
+        display: none;
+    }
+    
     nav {
         z-index: 6;
     }  
@@ -927,7 +941,17 @@ ul {
     
 }
 
+/*Home Illustrations*/
 
+.illustration {
+    position: absolute;
+}
+
+.illustration:hover {
+        -webkit-transform: rotateZ(2deg);
+        -ms-transform: rotateZ(2deg);
+        transform: rotateZ(2deg);
+}
 
 
 /*
