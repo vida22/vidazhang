@@ -671,7 +671,7 @@ nav>ul>li>a:hover{
 }
 
 .sidebar.profile-sidebar {
-    background: #F8F8F8;
+    background: #ffffff;
     -moz-box-shadow: 1px 1px 1px 1px #f6f6f6;
     -webkit-box-shadow:1px 1px 1px 1px #f6f6f6;
     z-index: 4;
