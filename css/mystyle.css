@@ -948,9 +948,9 @@ ul {
 }
 
 .illustration:hover {
-        -webkit-transform: rotateZ(2deg);
-        -ms-transform: rotateZ(2deg);
-        transform: rotateZ(2deg);
+        -webkit-transform: rotateZ(2.5deg);
+        -ms-transform: rotateZ(2.5deg);
+        transform: rotateZ(2.5deg);
 }
 
 
