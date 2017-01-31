@@ -3,6 +3,7 @@ $(document).ready(function() {
 //Tooltip
     $('[data-toggle="tooltip"]').tooltip(); 
     
+    
 //Progress Bar    
   var winHeight = $(window).height(), 
       docHeight = $(document).height(),
