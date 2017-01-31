@@ -3,6 +3,14 @@ $(document).ready(function() {
 //Tooltip
     $('[data-toggle="tooltip"]').tooltip(); 
     
+//DARPA Video Pause
+var video = document.getElementById("darpa-vid");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 2000);
+});
+    
 //Progress Bar    
   var winHeight = $(window).height(), 
       docHeight = $(document).height(),
