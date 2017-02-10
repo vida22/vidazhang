@@ -335,6 +335,7 @@ progress::-moz-progress-bar {
     
     .project h4 {
         margin-top: 15px;
+        max-width: 90%;
 /*        color: #959595;*/
     }
 
