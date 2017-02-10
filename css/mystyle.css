@@ -7,6 +7,7 @@ a, nav li, .logo {
     cursor: hand;
 }
 
+
 /*DIVs*/
 
 body{
@@ -103,7 +104,7 @@ progress::-moz-progress-bar {
 }
 
 .space500px {
-    padding-bottom: 500px;
+    padding-bottom: 700px;
 }
 
 .space15px {
@@ -335,6 +336,7 @@ progress::-moz-progress-bar {
     
     .project h4 {
         margin-top: 15px;
+        max-width: 90%;
 /*        color: #959595;*/
     }
 
@@ -846,20 +848,24 @@ ul {
 }
 
 #schools {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+/*
     -webkit-transition: .3s ease-in-out;
     -moz-transition: .3s ease-in-out; 
     -o-transition: .3s ease-in-out;
+*/
 }
 
+/*
 #schools:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%);  
     filter: grayscale(0%);
     -webkit-transition: .3s ease-in-out;
     -moz-transition: .3s ease-in-out; 
     -o-transition: .3s ease-in-out;
 }
+*/
 
 /*Social Icons*/
 #social ul li {
