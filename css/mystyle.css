@@ -280,7 +280,8 @@ progress::-moz-progress-bar {
     }
     
     hr {
-    margin-bottom: 80px;
+        margin-top: 60px;
+        margin-bottom: 120px;
     }
     
     h1{
@@ -318,7 +319,7 @@ progress::-moz-progress-bar {
     p, li{
     font-size: 17px;
     line-height: 27px;
-    letter-spacing: .6px;
+    letter-spacing: .83px;
     }
 
     #works p {
@@ -782,11 +783,12 @@ p.intro-text {
 
 h4 {
     /*project keywords*/
-    font-weight: 500;
+    font-weight: 400;
 /*    color: #707070;*/
     color: #959595;
     z-index: 2;
 }
+
 
 h5 {
     /*project titles in each proj page*/
