@@ -246,6 +246,10 @@ progress::-moz-progress-bar {
     float: right;
     padding-left: 100px;
     }
+    
+    #intro-pic {
+        display: none;
+    }
 }
 
 
