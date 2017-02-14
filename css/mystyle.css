@@ -421,6 +421,9 @@ progress::-moz-progress-bar {
         width: 90%;
     }
     
+    #my-pic {
+        width: 450px;
+    }
 }
 
 
@@ -580,6 +583,10 @@ progress::-moz-progress-bar {
         width: 30%;
         display: block;
         margin: 30px auto 30px auto;
+    }
+    
+    #my-pic {
+        width: 85%;
     }
 }
 
