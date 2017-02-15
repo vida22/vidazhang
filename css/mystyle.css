@@ -122,13 +122,71 @@ progress::-moz-progress-bar {
 /*Media Queries*/
 
 
-/*Layout for desktop*/
-@media (min-width: 1024px) {
+/*Layout for big desktop >1922px*/
+@media (min-width: 1922px) {
+    
+    #home-space {
+        height: 498px;
+        display: block;
+    }
+    
+    #profile {
+        width: 20%;
+    }
+    
+    #profile p {
+        margin-top: 25px;
+        width: 80%;
+    }
+    
+    .project-img-long {
+        max-width: 158%;
+/*        padding-right: 10%;*/
+    }
+    
+    .project-img-med {
+        width: 626px;
+    }
+    
+    .project-vid-long {
+        width: 100vw;
+        float: right;
+        padding-left: 100px;
+        padding-right: 4%;
+    }
+    
+    .sidebar {
+        padding-left: 7%;
+        padding-right: 50px;
+    }
+    
+    .project {
+        padding: 22px 100px 42px 200px;   
+    }
+    
+}
+
+
+/*Layouts for 1024-1921*/
+@media (min-width: 1024px) and (max-width:1921px) {
+
+    #home-space {
+        height: 498px;
+        display: block;
+    }
+    
+    #profile p {
+        margin-top: 25px;
+        width: 80%;
+    }
+
+        
     #profile {
         top: 10%;
         display: block;
         position: fixed;
         max-width: 300px;
+        width: 27%;
     }
     
     .sidebar {
@@ -162,14 +220,15 @@ progress::-moz-progress-bar {
         margin-top: 82px;
     }
     
+    .project-img-med {
+        width: 626px;
+    }
+    
     .project-img-long {
         max-width: 158%;
 /*        padding-right: 10%;*/
     }
     
-    .project-img-med {
-        width: 626px;
-    }
     
     .project-vid-long {
         width: 100vw;
@@ -177,8 +236,109 @@ progress::-moz-progress-bar {
         padding-left: 100px;
         padding-right: 4%;
     }
-
+    
 }
+
+
+/*Layout for desktop and above >1024*/
+@media (min-width: 1024px) {
+    #profile {
+        top: 10%;
+        display: block;
+        position: fixed;
+    }
+    
+    .sidebar {
+        position: fixed;
+        height: 100%;
+        width: 30%;
+        display: inline-block;
+    }
+    
+    #works {
+        left: 30%;
+        position: relative;
+        display: block;
+        width: 70%;
+    }
+    
+    nav {
+        z-index: 3;
+    }
+    
+    
+    #profile h2 {
+        margin-top: 82px;
+    }
+    
+    .project-img-med {
+        width: 90%;
+    }
+}
+
+
+/*Illustrations*/
+
+/*Layouts for big desktop >1400*/
+@media (min-width: 1500px) {
+    .illustration {
+        display: none;
+    }
+    
+    #home-space {
+        display: none;
+    }
+}
+
+
+/*Layouts for tablet to desktop 768 - 1400*/
+@media (min-width: 768px) and (max-width:1500px) {
+    #home-space {
+        height: 498px;
+        display: block;
+    }
+    
+    #me {
+        width: 358.39px;
+        top: 140px;
+        left: 27%;
+    }
+    
+    #data {
+        width: 95.55px;
+        top: 140px;
+        left: 134.4px;
+    }
+    
+    #pingpong {
+        width: 89.59px;
+        top: 370px;
+        left: 161.28px;
+    }
+    
+    #code {
+        width: 90.55px;
+        top: 134px;
+        left: 67%;
+    }
+    
+    #world {
+        width: 89.59px;
+        top: 369px;
+        left: 64.5%;
+    }
+}
+
+@media (max-width: 767px){
+    .illustration {
+        display: none;
+    }
+    
+    #home-space {
+        display: none;
+    }
+}
+
 
 /*Layout for tablet or small desktop*/
 @media (min-width: 480px) and (max-width:1023px) {
@@ -252,6 +412,13 @@ progress::-moz-progress-bar {
     }
 }
 
+@media (min-width:480px) and (max-width:1921px) {
+    .sidebar {
+        padding-left: 84px;
+        padding-right: 50px;
+    }
+}
+
 
 /*Typography and Layout for non-mobile*/
 
@@ -268,10 +435,6 @@ progress::-moz-progress-bar {
     margin-left: 84px;
     }
     
-    .sidebar {
-    padding-left: 84px;
-    padding-right: 50px;
-    }
     
     #intro-content {
         width: 90%;
