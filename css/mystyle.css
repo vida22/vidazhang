@@ -290,7 +290,7 @@ progress::-moz-progress-bar {
     
     h1{
     font-size: 32px;
-    line-height: 44px;
+    line-height: 1.375;
     letter-spacing: .4px;
     margin-top: 30px;
     margin-bottom: 35px;
@@ -306,7 +306,7 @@ progress::-moz-progress-bar {
     h2{
         font-size: 25px;
         letter-spacing: .7px;
-        line-height: 35px;
+        line-height: 1.4;
         max-width: 90%;
         color: #303030;
         font-weight: 500;
@@ -322,7 +322,7 @@ progress::-moz-progress-bar {
 
     p, li{
     font-size: 17px;
-    line-height: 27px;
+    line-height: 1.6;
     letter-spacing: .83px;
     }
 
@@ -334,7 +334,7 @@ progress::-moz-progress-bar {
 
     h4 {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.39;
     letter-spacing: 0.7px;
     margin: 30px 0px 30px 0px;
     }
@@ -484,7 +484,7 @@ progress::-moz-progress-bar {
     
     h1{
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         letter-spacing: .7px;
         margin-top: 30px;
         margin-bottom: 35px;
@@ -493,7 +493,7 @@ progress::-moz-progress-bar {
     h2{
         font-size: 16px;
         letter-spacing: 1.3px;
-        line-height: 19px;
+        line-height: 1.19;
         max-width: 90%;
         color: #252525;
     }
@@ -510,7 +510,7 @@ progress::-moz-progress-bar {
 
     p, li{
         font-size: 14px;
-        line-height: 20px;
+        line-height: 1.43;
         letter-spacing: .75px;
         margin: 15px 0px 15px 0px;
     }
@@ -519,7 +519,7 @@ progress::-moz-progress-bar {
     h4 {
         /*project tags*/
         font-size: 10px;
-        line-height: 14px;
+        line-height: 1.4;
         letter-spacing: 0.7px;
         margin: 30px 0px 30px 0px;
         max-width: 80%;
@@ -807,7 +807,7 @@ h5 {
     z-index: 0;
     font-weight: 500;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 1.2;
     margin-top: 104px;
     margin-bottom: -15px;
 }
