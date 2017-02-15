@@ -870,6 +870,7 @@ ul {
 */
 }
 
+
 /*
 #schools:hover {
     -webkit-filter: grayscale(0%);  
@@ -879,6 +880,7 @@ ul {
     -o-transition: .3s ease-in-out;
 }
 */
+
 
 /*Social Icons*/
 #social ul li {
@@ -971,6 +973,8 @@ ul {
         -ms-transform: rotateZ(2.5deg);
         transform: rotateZ(2.5deg);
 }
+
+
 
 
 /*
