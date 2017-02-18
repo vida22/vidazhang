@@ -177,7 +177,7 @@ progress::-moz-progress-bar {
     
     #profile p {
         margin-top: 25px;
-        width: 70%;
+        width: 73%;
     }
 
         
@@ -210,11 +210,7 @@ progress::-moz-progress-bar {
     .project {
         padding: 22px 100px 42px 100px;   
     }
-    
-    #profile p {
-        margin-top: 25px;
-        width: 80%;
-    }
+
     
     #profile h2 {
         margin-top: 82px;
