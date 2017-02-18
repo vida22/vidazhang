@@ -177,7 +177,7 @@ progress::-moz-progress-bar {
     
     #profile p {
         margin-top: 25px;
-        width: 80%;
+        width: 70%;
     }
 
         
@@ -301,7 +301,8 @@ progress::-moz-progress-bar {
     #me {
         width: 358.39px;
         top: 140px;
-        left: 27%;
+        left: 241.906px;
+/*        left: 27%;*/
     }
     
     #data {
@@ -319,13 +320,15 @@ progress::-moz-progress-bar {
     #code {
         width: 90.55px;
         top: 134px;
-        left: 67%;
+/*        left: 67%;*/
+        left: 600.312px;
     }
     
     #world {
         width: 89.59px;
         top: 369px;
-        left: 64.5%;
+/*        left: 64.5%;*/
+        left: 577.906px;
     }
 }
 
