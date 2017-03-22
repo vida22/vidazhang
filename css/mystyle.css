@@ -568,8 +568,6 @@ progress::-moz-progress-bar {
         margin: 60px auto 0px auto;
         padding-top: 10px;
         height: 519px;
-        padding-top: 10px;
-    
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1); 
         -ms-transition: all 200ms ease-in;
