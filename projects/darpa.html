@@ -71,25 +71,20 @@
             <br><br>
             This project is <b>a collaboration between CMU, <a href="https://en.wikipedia.org/wiki/DARPA" target="_blank">DARPA</a>, <a href="https://en.wikipedia.org/wiki/BBN_Technologies" target="_blank">BBN</a>, and <a href="https://www.invincea.com/" target="_blank">Invincea</a></b>, with the aim to achieve an order of magnitude improvements for mobile privacy. As the designer on the team (advised by <a href="https://www.hcii.cmu.edu/people/jason-hong" target="_blank">Professor Jason Hong</a>), my role is to reimagine the UX and UI for privacy settings in a privacy-enhanced Android OS.
             </p>    
-            <p>This project is still work-in-progress.
+            <p>This project is still work-in-progress.</p>
                 
-                Check out the <a target="_blank" href="https://invis.io/NAAIVRZYD">last prototype</a>.</p>
-                
+<!--                Check out the <a href="https://invis.io/NAAIVRZYD">current prototype</a>.-->
             
 <!--                <p>[preview of the current iteration - animation]</p>-->
              <div class=space30px></div>
             <div>
                 <video class="project-vid-small" autoplay loop><source src="../assets/DARPA/DARPA3.mov" type="video/mp4"></video>
             </div>
-                <h4>Onboarding to educate users about the new data model. Set up preference for all apps in a quick workflow.</h4>
-                
-            <div><video class="project-vid-small" autoplay loop><source src="../assets/DARPA/bits.mov" type="video/mp4"</video></div>
-                <h4>Progressive disclosure (hiding secondary information and layering) creates and hierarchy and makes the information volume not as overwhelming.</h4>
                
                 
             <div class="space15px"></div>
-            <h3>PROJECT BACKGROUND</h3>    
-            <h2>The new privacy policy data model</h2>
+            <h3>GETTING STARTED</h3>    
+            <h2>With better privacy protection comes greater design challenge</h2>
             <p>In current Android OS, apps tell you what permissions they are using (e.g. location, camera), but they don't tell you</p>
             <ul class="text-list">
                 <li><b>Why they are using these permissions</b> (e.g. for advertising)</li>
@@ -104,40 +99,30 @@
             <h4>Our project shows user what the permissions are used for and who are the data being sent to</h4>
             <br>    
             
-                <p>This is the new data model that DARPA and CMU will be proposing to Android: all Android developers need to specify the purpose of each privacy data use; on top of that, we can now parse out what third-party libraries are using what privacy data.<br><br>
-                The ultimate goal is to incorporate this data model into Android OS and the UI I'm designing for will be in system settings. As of right now, we're developing it as a stand-alone app.</p> 
-                
-<!--
-            Engineers have done the ground work. But now, here come the design challenges. For example:<p> 
+            <p>This is the new data model that DARPA and CMU will be proposing to Android: all Android developers need to specify the purpose of each privacy data use; on top of that, we can now parse out what third-party libraries are using what privacy data.<br><br> 
+            Engineers have done the ground work. But now, here come the design challenges:<p> 
                 <ul class="text-list">
-                    <li>How can we transfer all these data onto a ~2x4 inch mobile screen?</li> 
-                    <li>How can we make sure privacy settings are easy to understand and manage?</li> 
-                    <li><b>How can we best protect users' mobile privacy under this new paradigm? </b></li>
+                    <li><b>How can we transfer all these data onto a ~2x4 inch mobile screen?</b></li> 
+                    <li><b>How can we make sure privacy settings are easy to understand and manage?</b></li> 
+                    <li><b>How can we best protect users' mobile privacy under this new paradigm?</b></li>
                 </ul>
                 
--->
                 
             <div class="space15px"></div><br>
             <h3>FAIL FAST, ITERATE FAST</h3> 
                 <p>Through an interactive design process, I was quickly moving between paper and digital <b>prototyping, testing </b>prototypes with users, and <b>co-creating</b> with and getting feedback from my advisor and engineers. From each iteration, I learned something valuable. Some helped me make small usability improvements, some helped me make major changes in my design direction.
             </p>
                 <br>
-            <h2>Initial iterations focused on flexible data organization</h2>
-            <p>My early ideation evolved around solving this problem:</p>
-                <ul class='text-list'>
-                    <li><b>How can people manage all their multi-layer privacy settings most efficiently, given the new model?</b></li>
-                </ul>
-            
-<!--
+            <h2>Initial iterations focused on flexible filtering</h2>
+            <p>I began my early ideation based on the following scenarios:</p>
             <ul class='text-list'>
                 <li>Which apps of mine use location data? (view by permission)</li>
                 <li>Which apps of mine use my data for advertising? (view by purpose)</li>
                 <li>What permission does this app request for and why?</li>
                 <li>What are the unusual behaviors of my apps and what actions do I need to take?</li>
             </ul>
--->
                 
-                <p>To solve this problem, I focused my initial prototypes on flexible data organization so that users can quickly see and manage their privacy data in different views: by apps, permissions, purposes, and third-party libraries. With research, <b>I experimented with all different ways of organizing the data, from traditional filtering, faceted metadata, to search-as-filter.</b></p>
+                <p>My initial prototypes were focused on a flexible data filtering so that users can manage their privacy data in different views: app, permission, purpose, and third-party library. With research, <b>I experimented with all different ways of organizing the data, from traditional filtering, faceted metadata, to search-as-filter.</b></p>
             
                 <div class="project-img-div-long">
                     <img class="project-img-long" src="../assets/DARPA/initial-exploration.png" alt="Initial exploration">
@@ -171,23 +156,22 @@
             
             <p>This means:</p>
             <ul class="text-list">
+                <li><b>Install-time privacy setting UI is crucial. </b><br>It’s likely to be the only time that most users will review their privacy settings. (The install-time UI is still work-in-progress.)</li>
                 <li><b>We need to convince people to care more.</b><br> Users don't about their privacy as much as they think.</li>
                 <li><b>We need to further simplify the configuration.</b></li>
                     <ul class="text-list">
                         <li>Minimize the number of clicks needed to set things up</li>
                         <li>Less text, more icons, easier to read with progressive disclosure</li>
                     </ul>
-                <li><b>Install-time privacy setting UI is crucial. </b><br>It’s likely to be the only time that most users will review their privacy settings. (The install-time UI is still work-in-progress.)</li>
             </ul>
                 
                 
             <div class="space15px"></div>
-                <h3>NEW PROBLEM + NEW SOLUTIONS</h3>
-                <p>From research, the new problem emerged: <b>How can we make sure that people 1. understand the new data model, 2. become more engaged? </b> 
-                    <br><br>After all, the ultimate goal is to help users best protect their mobile privacy. We want them to take actions and be active in their privacy protection. We can only expect behavioral change after emotional and cognitive change. </p>
+                <h3>DESIGN DECISIONS</h3>
+                <p><b>We can only expect behavioral change after emotional and cognitive change.</b> After all, the goal is to help users best protect their mobile privacy.</p>
                 
                 <br>
-                <h2>Solution 1: Onboarding tutorial helped users learn about data privacy and build up the mental model</h2>
+                <h2>Onboarding tutorial helped users learn about data privacy and build up the mental model</h2>
                 <p><b>Action:</b> I created an onboarding tutorial to educate users of their data privacy, introducing the concept of permissions, purposes, and third-party libraries.<br> 
                 <b>Result:</b> Users were able to have a much more clear mental model when they go into settings. </p>
 
@@ -197,38 +181,15 @@
                 <h4>Onboarding tutorial explains permissions, purposes, and third-party libraries</h4>
                 
                 <br>
-                <h2>Solution 2: A more exploratory design lead to less lost and more engaged users</h2>
+                <h2>A more exploratory design lead to less confused and more engaged users</h2>
                 <p><b>Action:</b> Instead of just giving users category titles of privacy data, I decided to show more detailed examples of apps and types of privacy information upfront, to help users explore possibilities.<br> 
                 <b>Result:</b> Users expressed fewer confusions, became more engaged, and showed more interest in managing their data privacy.</p>
                 <br>
                 <br>
                 <div><video class="project-vid-long" autoplay loop><source src="../assets/DARPA/exploratory-home.m4v" type="video/mp4"</video></div>
+
                 <h4>Giving more detailed examples of privacy categories incentivises users to explore more.</h4>
-                    
                 
-                <div class="space15px"></div>
-                <h3>THE CHALLENGE CONTINTUES</h3>
-                <p>While the last iteration solved the understanding and motivation problem, more problems surfaced through more user testing. 
-                </p>
-                    
-                <ul class="text-list">
-                    <li><b>The exploratory home screen layout is more engaging, but it also sacrificed some information architecture clarity.</b>   <ul><li>When user digged deep into each workflow, they found it somewhat confusing.</li></ul>
-                    </li>
-                    <li><b>Some features might be repetitive as they are achieving the same goal.</b>
-                        <ul><li>For example, system recommendations & turn off "ads" for all apps have the same goal: making bulk setting easier. But is the latter feature necessary? Having all these features seems to contribute the complexity problem. </li></ul>
-                    </li>
-                    <li><b>Is the app offering too much flexibility?</b>
-                        <ul><li>For example, the app now allows users to turn off any purpose for all apps. However, most purposes are benign and it's unlikely that users want to turn them off. Plus, this function would mostly be used power/expert users. Would a <i>IFTTT</i> or <i>Workflow</i> model work here?</li></ul>
-                    </li>
-                </ul>
-                    
-                    <div class="project-img-div-med">
-                    <img class="project-img-med" src="../assets/DARPA/goals.png" alt="design goals">
-                </div>
-                    <h4>These are the goals I'm aiming achieve with my design.</h4>
-                <br>
-                    <p>To find out the answers to these qustions, I'm planning to conduct <b>surveys and user interviews</b>. I'm also talking with the team about these different ideas and <a target="_blank" href="https://invis.io/NAAIVRZYD">our product roadmap going forward</a>. </p>
-<!--
                 <br>
                 <h2>Applying crowdsourced recommended settings made only a button away</h2>
                 <p><b>Action:</b> While users can still micro-manage every single privacy setting, I also made the "Apply Recommended Settings" a prominent call-to-action. The user can preview the recommended settings before deciding whether to apply. <br> 
@@ -236,13 +197,11 @@
                 <br>
                 
                 <div><video class="project-vid-small" autoplay loop><source src="../assets/DARPA/recommend2.mov" type="video/mp4"</video></div>
-                <h4>Applying crowdsourced recommended settings made only a button away.</h4>
--->
+                <h4>Giving more detailed examples of privacy categories incentivises users to explore more.</h4>
             
-<!--
                 <br>
                 <h2>Privacy data broken down into bite-sized bits</h2>
-                <p><b>Action:</b> Showing all the privacy data at once turned out to be too overwhelming for normal users. Showing the data in bits and pieces helps reduce the mental strain the privacy settings impose on users. <br> 
+                <p><b>Action:</b> Showing all the privacy data at one time turned out to be too overwhelming for normal users. Showing the data in bits and pieces helps reduce the mental strain the privacy settings impose on users. <br> 
                 <b>Result:</b> Users are less overwhelmed. The privacy settings are now more digestible. </p>
                 <div><video class="project-vid-small" autoplay loop><source src="../assets/DARPA/bits.mov" type="video/mp4"</video></div>
                 <h4>Progressive disclosure (hiding secondary information and layering) creates and hierarchy and makes the information volume not as overwhelming.</h4>
@@ -250,7 +209,6 @@
                 <br>
                 
                 <p>I'm continuing to work on this project in the spring semester. There are a lot more things to be explored, such as designing effective install-time UI, making the prototype more high-fidelity, and evaluating the effective of the current iteration with more users, etc. </p>
--->
                 <div class="project-img-div-long">
                     <img class="project-img-long" src="../assets/DARPA/sitemap.png" alt="Sitemap">
                 </div>
@@ -269,6 +227,7 @@
             <br><br>
                 <p class="secondary">If you are interested in this project and want to take a closer look at the prototype, feel free to reach out! Also, check out other cool projects at <a href="http://cmuchimps.org/" target="_blank">CMU CHIMPS Lab</a> that involve ubiquitous computing and usable privacy and security.</p>
                     
+                          
         
         
         <div class="jump">
