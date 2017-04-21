@@ -25,14 +25,22 @@ $(document).ready(function() {
     window.scrollTo(window.scrollX, window.scrollY - 110);
 });
 
-//find the number of anchors
-var numAnc = $('.anchor').length;
+//find the number of anchors/sections
+var numSec = $('.section').length;
+  
+//append all anchors 
+if (numSec > 0) {
+for (i=1;i<=numSec;i++){
+  var secName = $('#s'+i).text();
+  $('#tags').append('<a class="anchor" id="a'+i+'" href="#s'+i+'">'+secName+'</a>');
+}
+  
 
 //change tag when pass anchor point 
   var anchor_offset = 0;
 
 $(window).on('scroll', function() {
-  for (i=1; i <= numAnc; i++) {
+  for (i=1; i <= numSec; i++) {
     anchor_offset = $('#s'+i).offset().top-300;
 //    console.log(anchor_offset);
     
@@ -42,7 +50,8 @@ $(window).on('scroll', function() {
       $('.active').removeClass('active');
       $('#a'+i).addClass('active');
     }
-}});
+}})
+};
 
   
   

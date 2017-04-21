@@ -23,7 +23,7 @@
 //My Typed Script
 $(document).ready(function() {
     $(function(){
-        console.log("typed ran");
+//        console.log("typed ran");
         $(".sentence1").typed({
             strings: ["^3000making things.^400","solving problems.^400","lorem ipsum ..."], //transforming complex information into simple design.
             typeSpeed: 1, // typing speed
