@@ -41,7 +41,7 @@ for (i=1;i<=numSec;i++){
 
 $(window).on('scroll', function() {
   for (i=1; i <= numSec; i++) {
-    anchor_offset = $('#s'+i).offset().top-300;
+    anchor_offset = $('#s'+i).offset().top-200;
 //    console.log(anchor_offset);
     
     if ( $(window).scrollTop() > anchor_offset ) {
