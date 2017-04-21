@@ -33,6 +33,16 @@ body{
     margin: auto;
 }
 
+#tags {
+  margin-bottom: 25px;
+}
+/*
+
+#back-home {
+  position: fixed;
+  bottom: 20px;
+}
+*/
 
 /*previous and next project*/
 
@@ -62,7 +72,33 @@ body{
 }
 
 .hidden { 
-    display: none;
+/*
+  -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  opacity: 0; 
+*/
+  opacity: 0;
+    -webkit-animation-name: fadeOut;
+-webkit-animation-duration: .8s;
+animation-name: fadeOut;
+animation-duration: .8s;
+}
+
+
+.shown {
+/*
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+*/
+  -webkit-animation-name: fadeIn;
+-webkit-animation-duration: 1s;
+animation-name: fadeIn;
+animation-duration: 1s;
 }
 
 /*labels*/
@@ -534,7 +570,6 @@ progress::-moz-progress-bar {
 /*        color: #959595;*/
     }
 
-    
     .project-sum h4 {
         margin-bottom: 60px;
     }
@@ -1002,8 +1037,25 @@ h5 {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
-    margin-top: 104px;
-    margin-bottom: -15px;
+    margin-top: 90px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.anchor {
+  display: block; 
+  color: #DBDBDB;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.anchor:hover{
+  color: #e3518a;
+}
+    
+.active {
+  color: #e3518a;
+  font-weight: 500;
 }
 
 .secondary {
