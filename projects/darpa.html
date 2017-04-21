@@ -41,10 +41,18 @@
     </nav>   
       
     <div class="sidebar project-sidebar">
-        <div class="project-sum">
+        <div class="project-sum hidden">
             <h5>Enhanced Android Privacy Settings</h5>
-            <h4>Interaction Design, Mobile Privacy, Information Architecture</h4>
-            <a class='details back-home hidden' href="../index.html">< &nbspBack to Home</a>
+<!--            <h4>Interaction Design, Mobile Privacy, Information Architecture</h4>-->
+            <div id="tags">
+              <a class='anchor' id='a1' href='#s1'>BACKGROUND</a>
+              <a class='anchor' id='a2' href='#s2'>GETTING STARTED</a>
+              <a class='anchor' id='a3' href='#s3'>FAIL FAST, ITERATE FAST</a>
+              <a class='anchor' id='a4' href='#s4'>LEARNING FROM USERS</a>
+              <a class='anchor' id='a5' href='#s5'>DESIGN DECISIONS</a>
+              <a class='anchor' id='a6' href='#s6'>REFELCTIONS</a>
+            </div>
+<!--          <a class='details hidden' id='back-home' href="../index.html">< &nbspBack to Home</a>-->
         </div>
         
     </div>
@@ -66,10 +74,11 @@
             <span class="label">Mobile Privacy</span>
             <span class="label">Information Architecture</span>
             <div class="space15px"></div><br>
-                
+            
+            <h3 id='s1'>BACKGROUND</h3>      
             <p>With the prevalence of sensor-based smart phone apps, mobile data privacy is getting more and more complex. 
             <br><br>
-            This project is <b>a collaboration between CMU, <a href="https://en.wikipedia.org/wiki/DARPA" target="_blank">DARPA</a>, <a href="https://en.wikipedia.org/wiki/BBN_Technologies" target="_blank">BBN</a>, and <a href="https://www.invincea.com/" target="_blank">Invincea</a></b>, with the aim to achieve an order of magnitude improvements for mobile privacy. As the designer on the team (advised by <a href="https://www.hcii.cmu.edu/people/jason-hong" target="_blank">Professor Jason Hong</a>), my role is to reimagine the UX and UI for privacy settings in a privacy-enhanced Android OS.
+            This project is a collaboration between CMU, <a href="https://en.wikipedia.org/wiki/DARPA" target="_blank">DARPA</a>, <a href="https://en.wikipedia.org/wiki/BBN_Technologies" target="_blank">BBN</a>, and <a href="https://www.invincea.com/" target="_blank">Invincea</a>, with the aim to achieve an order of magnitude improvements for mobile privacy. As the designer on the team (advised by <a href="https://www.hcii.cmu.edu/people/jason-hong" target="_blank">Professor Jason Hong</a>), my role is to reimagine the UX and UI for privacy settings in a privacy-enhanced Android OS.
             </p>    
             <p>This project is still work-in-progress.</p>
                 
@@ -83,7 +92,7 @@
                
                 
             <div class="space15px"></div>
-            <h3>GETTING STARTED</h3>    
+            <h3 id='s2'>GETTING STARTED</h3>    
             <h2>With better privacy protection comes greater design challenge</h2>
             <p>In current Android OS, apps tell you what permissions they are using (e.g. location, camera), but they don't tell you</p>
             <ul class="text-list">
@@ -109,7 +118,7 @@
                 
                 
             <div class="space15px"></div><br>
-            <h3>FAIL FAST, ITERATE FAST</h3> 
+            <h3 id='s3'>FAIL FAST, ITERATE FAST</h3> 
                 <p>Through an interactive design process, I was quickly moving between paper and digital <b>prototyping, testing </b>prototypes with users, and <b>co-creating</b> with and getting feedback from my advisor and engineers. From each iteration, I learned something valuable. Some helped me make small usability improvements, some helped me make major changes in my design direction.
             </p>
                 <br>
@@ -131,7 +140,7 @@
                 <br>  
             
             <div class="space15px"></div>
-            <h3>LEARNING FROM USERS</h3>
+            <h3 id='s4'>LEARNING FROM USERS</h3>
             <h2>Users didn’t even know what to look, filter or search for</h2>
             <p>From testing my prototypes with users, I learned that <b>powerful functionality is useless unless users actually understand the subject matter (privacy) and have a clear mental model of the data structure</b>. 
             </p>
@@ -167,7 +176,7 @@
                 
                 
             <div class="space15px"></div>
-                <h3>DESIGN DECISIONS</h3>
+                <h3 id='s5'>DESIGN DECISIONS</h3>
                 <p><b>We can only expect behavioral change after emotional and cognitive change.</b> After all, the goal is to help users best protect their mobile privacy.</p>
                 
                 <br>
@@ -217,7 +226,7 @@
 
         
             <div class="space15px"></div>
-            <h3>REFLECTIONS</h3>
+            <h3 id='s6'>REFLECTIONS</h3>
             <h2>Always validate design assumptions with users</h2>
                 <p>Designers and engineers often know “too much” to make good assumptions about the product or the user. Had I not test my early iterations with real users, I would not have changed my focus from how can I allow users to flexibly manage their data privacy, to how can I encourage them the care about data privacy and explore the possibilities.</p>
             

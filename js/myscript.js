@@ -19,7 +19,33 @@ $(document).ready(function() {
      value = $(window).scrollTop();
      progressBar.attr('value', value);
   });
+  
+//offset anchor
+  window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 110);
+});
 
+//find the number of anchors
+var numAnc = $('.anchor').length;
+
+//change tag when pass anchor point 
+  var anchor_offset = 0;
+
+$(window).on('scroll', function() {
+  for (i=1; i <= numAnc; i++) {
+    anchor_offset = $('#s'+i).offset().top-300;
+//    console.log(anchor_offset);
+    
+    if ( $(window).scrollTop() > anchor_offset ) {
+//         $('#test').show();
+//      console.log("something fireddd");
+      $('.active').removeClass('active');
+      $('#a'+i).addClass('active');
+    }
+}});
+
+  
+  
 //Hide and show nav when scroll
     var didScroll;
     var lastScrollTop = 0;
@@ -49,12 +75,12 @@ $(document).ready(function() {
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
             $('nav').removeClass('nav-down').addClass('nav-up border');
-            $('.project-sum').addClass('hidden');
+//            $('.project-sum').addClass('hidden');
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
                 $('nav').removeClass('nav-up').addClass('nav-down');
-                $('.project-sum').removeClass('hidden');
+//                $('.project-sum').removeClass('hidden');
             }
         }
 
@@ -67,12 +93,22 @@ $(document).ready(function() {
         if (st > max-200){
             $('nav').removeClass('nav-up').addClass('border');
         }
-        
-        if (st > max*.70){
-            $('.back-home').removeClass('hidden');
+      
+        //show sidebar only after scrolling x
+        if (st > 300) {
+          $('.project-sum').removeClass('hidden');
+          $('.project-sum').addClass('shown');
         } else {
-            $('.back-home').addClass('hidden')
+          $('.project-sum').addClass('hidden');
+          $('.project-sum').removeClass('shown');
         }
+        
+        //back-home link
+//        if (st > max*.70){
+//            $('#back-home').removeClass('hidden');
+//        } else {
+//            $('#back-home').addClass('hidden')
+//        }
 
         lastScrollTop = st;
     }
